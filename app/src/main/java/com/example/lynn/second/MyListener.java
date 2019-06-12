@@ -37,6 +37,10 @@ public class MyListener implements View.OnClickListener {
 
         set.play(animation1).with(valueAnimator);
 
+        ObjectAnimator animation2 = ObjectAnimator.ofFloat(button,"rotationX",0,90,45,500,360);
+
+        set.play(animation2).with(valueAnimator);
+
         set.setDuration(10000);
 
         set.start();

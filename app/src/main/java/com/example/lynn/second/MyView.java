@@ -21,8 +21,12 @@ public class MyView extends LinearLayout {
 
         buttons = new Button[word.length()];
 
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(1000/buttons.length,100);
+
         for(int counter=0;counter<buttons.length;counter++) {
             buttons[counter] = new Button(context);
+
+            buttons[counter].setLayoutParams(params);
 
             buttons[counter].setText(temp.substring(counter,counter+1));
 
